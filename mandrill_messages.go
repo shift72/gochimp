@@ -225,7 +225,7 @@ type Message struct {
 	AutoHtml                bool                `json:"auto_html,omitempty"`
 	UrlStripQS              bool                `json:"url_strip_qs,omitempty"`
 	InlineCss               bool                `json:"inline_css,omitempty"`
-	PreserveRecipients      bool                `json:"preserve_recipients,omitempty"`
+	PreserveRecipients      *bool                `json:"preserve_recipients,omitempty"`
 	BCCAddress              string              `json:"bcc_address,omitempty"`
 	TrackingDomain          string              `json:"tracking_domain,omitempty"`
 	SigningDomain           string              `json:"signing_domain,omitempty"`
